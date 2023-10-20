@@ -95,18 +95,8 @@ class StrumNote extends FlxSprite
 					animation.add('pressed', [7, 11], 12, false);
 					animation.add('confirm', [15, 19], 24, false);
 			}
-		}
-		else
-		{
-			frames = Paths.getSparrowAtlas(texture);
-			animation.addByPrefix('green', 'arrowUP');
-			animation.addByPrefix('blue', 'arrowDOWN');
-			animation.addByPrefix('purple', 'arrowLEFT');
-			animation.addByPrefix('red', 'arrowRIGHT');
+		}	
 
-			antialiasing = ClientPrefs.data.antialiasing;
-			setGraphicSize(Std.int(width * 0.7));
-		}
 		case 'Bamber ALT note':
 		{
 			frames = Paths.getSparrowAtlas(texture);
@@ -118,6 +108,7 @@ class StrumNote extends FlxSprite
 			antialiasing = ClientPrefs.data.antialiasing;
 			setGraphicSize(Std.int(width * 0.7));
 		}
+
 		case 'Beatbox Note':
 		{
 			frames = Paths.getSparrowAtlas(texture);
@@ -129,7 +120,19 @@ class StrumNote extends FlxSprite
 			antialiasing = ClientPrefs.data.antialiasing;
 			setGraphicSize(Std.int(width * 0.7));
 		}
+
+		else
 		{
+			frames = Paths.getSparrowAtlas(texture);
+			animation.addByPrefix('green', 'arrowUP');
+			animation.addByPrefix('blue', 'arrowDOWN');
+			animation.addByPrefix('purple', 'arrowLEFT');
+			animation.addByPrefix('red', 'arrowRIGHT');
+
+			antialiasing = ClientPrefs.data.antialiasing;
+			setGraphicSize(Std.int(width * 0.7));
+
+		
 			switch (Math.abs(noteData) % 4)
 			{
 				case 0:
