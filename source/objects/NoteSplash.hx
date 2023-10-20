@@ -105,7 +105,7 @@ class NoteSplash extends FlxSprite
 		}
 
 		if(animation.curAnim != null)
-			animation.curAnim.frameRate = FlxG.random.int(minFps, maxFps);
+			animation.curAnim.frameRate = FlxG.random.int(minFps, l)
 	}
 
 	public static function getSplashSkinPostfix()
