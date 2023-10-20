@@ -98,7 +98,7 @@ class StrumNote extends FlxSprite
 		}
 	}
 
-		case 'Bamber ALT note':
+		case 'Bamber ALT note';
 		{
 			frames = Paths.getSparrowAtlas(texture);
 			animation.addByPrefix('green', 'Phone00000');
@@ -110,7 +110,7 @@ class StrumNote extends FlxSprite
 			setGraphicSize(Std.int(width * 0.7));
 		}
 
-		case 'Beatbox Note':
+		case 'Beatbox Note';
 		{
 			frames = Paths.getSparrowAtlas(texture);
 			animation.addByPrefix('green', 'Beatbox00000');
