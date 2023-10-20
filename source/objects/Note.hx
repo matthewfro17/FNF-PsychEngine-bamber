@@ -150,6 +150,27 @@ class Note extends FlxSprite
 			rgbShader.r = arr[0];
 			rgbShader.g = arr[1];
 			rgbShader.b = arr[2];
+		}		
+		
+		if (PlayState.char.curCharacter.startsWith('bamber'))
+		{
+			rgbShader.r = arr[0];
+			rgbShader.g = arr[175];
+			rgbShader.b = arr[8];
+		}
+
+		if (PlayState.char.curCharacter.startsWith('davey'))
+		{
+			rgbShader.r = arr[20];
+			rgbShader.g = arr[80];
+			rgbShader.b = arr[255];
+		}
+
+		if (PlayState.char.curCharacter.startsWith('gf'))
+		{
+			rgbShader.r = arr[145];
+			rgbShader.g = arr[0];
+			rgbShader.b = arr[77];
 		}
 	}
 
@@ -183,6 +204,14 @@ class Note extends FlxSprite
 					hitsoundChartEditor = false;
 				case 'Alt Animation':
 					animSuffix = '-alt';
+				case 'Bamber ALT note':
+					animSuffix = 'ziiuvanPaun?';
+					//reloadNote('customnotes/farm');
+					// note colors
+					rgbShader.g = 0xFF00AF08;
+				case 'Beatbox Note':
+					animSuffix = '-alt';
+					//reloadNote('customnotes/farm');
 				case 'No Animation':
 					noAnimation = true;
 					noMissAnimation = true;
