@@ -106,7 +106,30 @@ class StrumNote extends FlxSprite
 
 			antialiasing = ClientPrefs.data.antialiasing;
 			setGraphicSize(Std.int(width * 0.7));
+		}
+		case 'Bamber ALT note':
+		{
+			frames = Paths.getSparrowAtlas(texture);
+			animation.addByPrefix('green', 'Phone00000');
+			animation.addByPrefix('blue', 'Phone10000');
+			animation.addByPrefix('purple', 'Phone20000');
+			animation.addByPrefix('red', 'Phone30000');
 
+			antialiasing = ClientPrefs.data.antialiasing;
+			setGraphicSize(Std.int(width * 0.7));
+		}
+		case 'Beatbox Note':
+		{
+			frames = Paths.getSparrowAtlas(texture);
+			animation.addByPrefix('green', 'Beatbox00000');
+			animation.addByPrefix('blue', 'Beatbox10000');
+			animation.addByPrefix('purple', 'Beatbox20000');
+			animation.addByPrefix('red', 'Beatbox30000');
+
+			antialiasing = ClientPrefs.data.antialiasing;
+			setGraphicSize(Std.int(width * 0.7));
+		}
+		{
 			switch (Math.abs(noteData) % 4)
 			{
 				case 0:
