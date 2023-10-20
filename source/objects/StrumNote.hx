@@ -95,7 +95,7 @@ class StrumNote extends FlxSprite
 					animation.add('pressed', [7, 11], 12, false);
 					animation.add('confirm', [15, 19], 24, false);
 			}
-		}	
+		}
 
 		case 'Bamber ALT note':
 		{
